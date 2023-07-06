@@ -62,7 +62,7 @@ jobs:
           END
     - name: Deploy to EC2
       env:
-        PATH_FILE: ml_process_demo
+        PATH_FILE: credit-mlprocess
         API_SERVICE_IMAGE: credit-api
         STREAMLIT_SERVICE_IMAGE: credit-streamlit
       run: |
