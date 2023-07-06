@@ -63,8 +63,8 @@ jobs:
     - name: Deploy to EC2
       env:
         PATH_FILE: ml_process_demo
-        API_SERVICE_IMAGE: iris-classifier-api
-        STREAMLIT_SERVICE_IMAGE: iris-classifier-streamlit
+        API_SERVICE_IMAGE: credit-api
+        STREAMLIT_SERVICE_IMAGE: credit-streamlit
       run: |
           ssh deploy_ec2 "mkdir temp"
           ssh deploy_ec2 "git clone https://github.com/muhammadalifaqsha/credit-mlprocess.git temp"
