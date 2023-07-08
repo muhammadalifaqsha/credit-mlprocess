@@ -73,7 +73,7 @@ async def predict(data: Request):
     type_customer = data['TypeCustomer']
     log_income = log(monthly_income + 1)
     log_log_revolving = log(log(revolving + 1) + 1)
-    log_debt_ratio = log(debt_ratio + 1)
+    log_debt_ratio = log(debt_ratio + 1e-05)
 
     data_order = [revolving,
                   age,
